@@ -1,21 +1,40 @@
 #include "minitalk.h"
 
-void	sig_handler(int sig)
+int	g_cnt;
+int	g_symb;
+
+static void	sig_zero(int sig)
 {
+	g_cnt /= 2;
 	(void)sig;
 }
 
-int	main(int argc, char **argv)
+static void	sig_one(int sig)
+{
+	g_symb += g_cnt;
+	g_cnt /= 2;
+	(void)sig;
+}
+
+int	main(void)
 {
 	int	pid;
 
 	pid = getpid();
-	if (argc != 1)
-		exit(1);
-	(void)argv;
-	ft_putnbr_fd(pid, 1);
-	write(1, "\n", 1);
-	sleep(10);
-	signal(SIGUSR1, &sig_handler);
+	ft_putnbr_fd(pid, STDOUT_FILENO);
+	write(STDOUT_FILENO, "\n", 1);
+	g_cnt = 128;
+	signal(SIGUSR1, &sig_one);
+	signal(SIGUSR2, &sig_zero);
+	while (1)
+	{
+		if (g_cnt == 0)
+		{
+			write(STDOUT_FILENO, &g_symb, 1);
+			g_cnt = 128;
+			g_symb = 0;
+		}
+		pause();
+	}
 	return (0);
 }

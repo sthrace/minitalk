@@ -6,6 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 # GNU Make 3.81
 # Copyright (C) 2006  Free Software Foundation, Inc.
 # This is free software; see the source for copying conditions.
@@ -13,11 +14,13 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 
-# Make data base, printed on Fri May 28 20:24:44 2021
+# Make data base, printed on Wed Jun  9 17:08:50 2021
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -53,11 +56,11 @@ VSCODE_VERBOSE_LOGGING = true
 # makefile (from `Makefile', line 55)
 OBJS = $(SRCS:.c=.o)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n0001ry8000f7k/T/vscode-ipc-c53dd990-5bfe-443c-8f02-2e735604396e.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n0001ry8000f7k/T/vscode-ipc-a69d970b-efdf-400b-9e0d-8bba04ec60e2.sock
 # environment
 VSCODE_CWD = /
 # environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.R56I7MvV8q/Render
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.1uvoOxxBAI/Render
 # environment
 PATH = /Users/sthrace/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki
 # environment
@@ -67,7 +70,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.tVgGodsByg/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.0MvxAQGiea/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -134,8 +137,9 @@ MAKEFLAGS = sRrqp
 MFLAGS = -sRrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
+ 
 # environment
-XPC_SERVICE_NAME = com.microsoft.VSCode.1416
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000001.Electron
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # makefile (from `Makefile', line 92)
@@ -146,6 +150,8 @@ CYAN = \033[1;36m
 +F = $(notdir $+)
 # environment
 __CF_USER_TEXT_ENCODING = 0x38F2:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # automatic
@@ -154,6 +160,8 @@ MAKEFILES :=
 LC_ALL = C
 # makefile (from `Makefile', line 56)
 HEADER = libft.h
+# environment
+SECURITYSESSIONID = 186a8
 # automatic
 ^F = $(notdir $^)
 # default
@@ -165,9 +173,9 @@ MAKELEVEL := 1
 # environment
 LANG = C
 # environment
-VSCODE_PID = 31390
+VSCODE_PID = 62301
 # variable set hash-table stats:
-# Load=74/1024=7%, Rehash=0, Collisions=8/109=7%
+# Load=76/1024=7%, Rehash=0, Collisions=8/110=7%
 
 # Pattern-specific Variable Values
 
@@ -234,7 +242,7 @@ all: libft.a
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
 
 # Not a target:
 ft_lstlast.o:
@@ -258,7 +266,7 @@ FCLEAN:
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 104):
-	echo "$(RED)REMOVING $(NAME) LIBRARY $(DEFAULT)"
+	echo "$(RED) REMOVING LIBFT LIBRARY $(DEFAULT)"
 	
 
 # Not a target:
@@ -290,16 +298,15 @@ COMP:
 # automatic
 # ? := 
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=2/13=15%
+# Load=8/32=25%, Rehash=0, Collisions=2/12=17%
 #  commands to execute (from `Makefile', line 98):
-	echo "\n$(WHITE)COMPILING $(NAME)$(DEFAULT)"
+	echo "\n$(WHITE) COMPILING LIBFT$(DEFAULT)"
 	
 
 # Not a target:
 ft_strncmpul.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 
 # Not a target:
@@ -365,7 +372,7 @@ ft_charjoin.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-28 18:39:07
+#  Last modified 2021-06-09 12:37:30
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -379,11 +386,11 @@ ft_isprint.o:
 
 libft.a: COMP ft_atoi.o ft_atol.o ft_bzero.o ft_calloc.o ft_isalnum.o ft_isalpha.o ft_isascii.o ft_isdigit.o ft_isprint.o ft_memchr.o ft_memcmp.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memset.o ft_strchr.o ft_strdup.o ft_strlcat.o ft_strlcpy.o ft_strlen.o ft_strncmp.o ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_charjoin.o ft_gnl.o ft_itoa_base.o ft_nbrlen_base.o ft_putnbr_base_fd.o ft_realloc.o ft_strncmpul.o ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o ft_lstadd_back.o ft_lstdelone.o ft_lstclear.o ft_lstiter.o ft_lstmap.o DONE
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-28 19:31:40
+#  Last modified 2021-06-09 17:02:58
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
 #  commands to execute (from `Makefile', line 64):
 	ar rc $(NAME) ${OBJS}
 	
@@ -441,7 +448,7 @@ DONE:
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 100):
-	echo "\n$(WHITE)COMPILED $(NAME)$(DEFAULT)"
+	echo "\n$(WHITE) COMPILED LIBFT$(DEFAULT)"
 	
 
 # Not a target:
@@ -456,6 +463,7 @@ leaks:
 #  File does not exist.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 77):
+ 
 	valgrind --show-leak-kinds=definite --leak-check=full ./$(NAME)
 	
 
@@ -487,7 +495,7 @@ CLEAN:
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 102):
-	echo "$(YELLOW)REMOVING $(NAME) OBJECT FILES $(DEFAULT)"
+	echo "$(YELLOW) REMOVING LIBFT OBJECT FILES $(DEFAULT)"
 	
 
 # Not a target:
@@ -611,7 +619,6 @@ ft_memset.o:
 ft_putchar_fd.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 
 # Not a target:
@@ -663,10 +670,13 @@ ft_putendl_fd.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri May 28 20:24:44 2021
+# Finished Make data base on Wed Jun  9 17:08:50 2021
 
+ 
+make: *** [library] Error 1
+ 
 
-# Make data base, printed on Fri May 28 20:24:44 2021
+# Make data base, printed on Wed Jun  9 17:08:50 2021
 
 # Variables
 
@@ -709,11 +719,11 @@ VSCODE_VERBOSE_LOGGING = true
 # makefile (from `Makefile', line 10)
 OBJS = $(SRCS:.c=.o)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n0001ry8000f7k/T/vscode-ipc-c53dd990-5bfe-443c-8f02-2e735604396e.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n0001ry8000f7k/T/vscode-ipc-a69d970b-efdf-400b-9e0d-8bba04ec60e2.sock
 # environment
 VSCODE_CWD = /
 # environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.R56I7MvV8q/Render
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.1uvoOxxBAI/Render
 # environment
 PATH = /Users/sthrace/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki
 # makefile (from `Makefile', line 8)
@@ -729,7 +739,7 @@ PURPLE = \033[1;35m
 # makefile (from `Makefile', line 2)
 NAME_C = client
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.tVgGodsByg/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.0MvxAQGiea/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -803,7 +813,7 @@ MFLAGS = -sRrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = com.microsoft.VSCode.1416
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000001.Electron
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # makefile (from `Makefile', line 79)
@@ -814,6 +824,8 @@ CYAN = \033[1;36m
 +F = $(notdir $+)
 # environment
 __CF_USER_TEXT_ENCODING = 0x38F2:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # automatic
@@ -822,6 +834,8 @@ MAKEFILES :=
 LC_ALL = C
 # makefile (from `Makefile', line 9)
 HEADER = client.h
+# environment
+SECURITYSESSIONID = 186a8
 # automatic
 ^F = $(notdir $^)
 # default
@@ -835,9 +849,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 31390
+VSCODE_PID = 62301
 # variable set hash-table stats:
-# Load=83/1024=8%, Rehash=0, Collisions=7/122=6%
+# Load=85/1024=8%, Rehash=0, Collisions=7/124=6%
 
 # Pattern-specific Variable Values
 
@@ -845,9 +859,9 @@ VSCODE_PID = 31390
 
 # Directories
 
-# . (device 16777227, inode 5103778): 14 files, no impossibilities.
+# . (device 16777227, inode 5103778): 16 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 16 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -925,7 +939,7 @@ git:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-28 19:05:07
+#  Last modified 2021-06-09 17:06:22
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -938,9 +952,6 @@ space: SPACE
 #  commands to execute (from `Makefile', line 53):
 	@$(RM) ~/Library/Caches/*
 	@$(RM) ~/Library/*42_cache*
- 
-make: *** [library] Error 1
- 
 	@$(RM) ~/Library/Application\ Support/Slack/Service\ Worker/CacheStorage/
 	@$(RM) ~/Library/Application\ Support/Slack/Cache/
 	@$(RM) ~/Library/Application\ Support/Slack/Code\ Cache/
@@ -981,6 +992,7 @@ fclean: clean FCLEAN
 	@$(RM) $(LIBFT)
 	
 
+ 
 DONE:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -1015,14 +1027,6 @@ library:
 # Load=8/32=25%, Rehash=0, Collisions=2/13=15%
 #  commands to execute (from `Makefile', line 29):
 	@$(MAKE) -C $(LIBFT_D)
-	
-
-leaks:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 44):
-	valgrind --leak-check=full --show-leak-kinds=definite ./$(NAME) infile "ls -la" "grep Make" outfile
 	
 
 .SILENT:
@@ -1070,7 +1074,7 @@ SPACE:
 	
 
 # files hash-table stats:
-# Load=23/1024=2%, Rehash=0, Collisions=0/58=0%
+# Load=22/1024=2%, Rehash=0, Collisions=0/57=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -1082,6 +1086,6 @@ SPACE:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri May 28 20:24:44 2021
+# Finished Make data base on Wed Jun  9 17:08:50 2021
 
  

@@ -6,8 +6,4 @@
 # include <sys/wait.h>
 # include <stdio.h>
 
-// server.c //
-
-// client.c //
-
 #endif

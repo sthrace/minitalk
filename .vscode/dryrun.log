@@ -1,118 +1,16 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory `/Users/sthrace/42Cursus/minitalk'
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C libft/
+ 
 make[1]: Entering directory `/Users/sthrace/42Cursus/minitalk/libft'
-echo "\n\033[1;37mCOMPILING libft.a\033[0m"
-clang -c -g3 -Wall -Wextra -Werror -o ft_atoi.o ft_atoi.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_atol.o ft_atol.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_bzero.o ft_bzero.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_calloc.o ft_calloc.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_isalnum.o ft_isalnum.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_isalpha.o ft_isalpha.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_isascii.o ft_isascii.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_isdigit.o ft_isdigit.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_isprint.o ft_isprint.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_memchr.o ft_memchr.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_memcmp.o ft_memcmp.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_memcpy.o ft_memcpy.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_memccpy.o ft_memccpy.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_memmove.o ft_memmove.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_memset.o ft_memset.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_strchr.o ft_strchr.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_strdup.o ft_strdup.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_strlcat.o ft_strlcat.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_strlcpy.o ft_strlcpy.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_strlen.o ft_strlen.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_strncmp.o ft_strncmp.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_strnstr.o ft_strnstr.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_strrchr.o ft_strrchr.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_tolower.o ft_tolower.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_toupper.o ft_toupper.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_substr.o ft_substr.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_strjoin.o ft_strjoin.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_strtrim.o ft_strtrim.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_split.o ft_split.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_itoa.o ft_itoa.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_strmapi.o ft_strmapi.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_putchar_fd.o ft_putchar_fd.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_putstr_fd.o ft_putstr_fd.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_putendl_fd.o ft_putendl_fd.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_putnbr_fd.o ft_putnbr_fd.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_charjoin.o ft_charjoin.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_gnl.o ft_gnl.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_itoa_base.o ft_itoa_base.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_nbrlen_base.o ft_nbrlen_base.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_putnbr_base_fd.o ft_putnbr_base_fd.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_realloc.o ft_realloc.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_strncmpul.o ft_strncmpul.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_lstnew.o ft_lstnew.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_lstadd_front.o ft_lstadd_front.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_lstsize.o ft_lstsize.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_lstlast.o ft_lstlast.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_lstadd_back.o ft_lstadd_back.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_lstdelone.o ft_lstdelone.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_lstclear.o ft_lstclear.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_lstiter.o ft_lstiter.c
-printf "\033[1;37m██"
-clang -c -g3 -Wall -Wextra -Werror -o ft_lstmap.o ft_lstmap.c
-printf "\033[1;37m██"
-echo "\n\033[1;37mCOMPILED libft.a\033[0m"
+echo "\n\033[1;37m COMPILING LIBFT\033[0m"
+ 
+echo "\n\033[1;37m COMPILED LIBFT\033[0m"
+ 
 ar rc libft.a ./ft_atoi.o ./ft_atol.o ./ft_bzero.o ./ft_calloc.o ./ft_isalnum.o ./ft_isalpha.o ./ft_isascii.o ./ft_isdigit.o ./ft_isprint.o ./ft_memchr.o ./ft_memcmp.o ./ft_memcpy.o ./ft_memccpy.o ./ft_memmove.o ./ft_memset.o ./ft_strchr.o ./ft_strdup.o ./ft_strlcat.o ./ft_strlcpy.o ./ft_strlen.o ./ft_strncmp.o ./ft_strnstr.o ./ft_strrchr.o ./ft_tolower.o ./ft_toupper.o ./ft_substr.o ./ft_strjoin.o ./ft_strtrim.o ./ft_split.o ./ft_itoa.o ./ft_strmapi.o ./ft_putchar_fd.o ./ft_putstr_fd.o ./ft_putendl_fd.o ./ft_putnbr_fd.o ./ft_charjoin.o ./ft_gnl.o ./ft_itoa_base.o ./ft_nbrlen_base.o ./ft_putnbr_base_fd.o ./ft_realloc.o ./ft_strncmpul.o ./ft_lstnew.o ./ft_lstadd_front.o ./ft_lstsize.o ./ft_lstlast.o ./ft_lstadd_back.o ./ft_lstdelone.o ./ft_lstclear.o ./ft_lstiter.o ./ft_lstmap.o
 make[1]: Leaving directory `/Users/sthrace/42Cursus/minitalk/libft'
+ 
 echo "\033[1;36m COMPILING server \033[0m\n"
-clang -c -g3 -Wall -Wextra -Werror -o server.o server.c
-printf "\033[1;36m...."
-clang -c -g3 -Wall -Wextra -Werror -o client.o client.c
-printf "\033[1;36m...."
 echo "\033[1;32m\n\n server COMPILED \033[0m\n"
 clang -g3 -Wall -Wextra -Werror libft/libft.a client.o -o client
 clang -g3 -Wall -Wextra -Werror libft/libft.a server.o -o server

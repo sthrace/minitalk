@@ -40,8 +40,8 @@ fclean:		clean FCLEAN
 
 re:			fclean all
 
-leaks:
-			valgrind --leak-check=full --show-leak-kinds=definite ./$(NAME) infile "ls -la" "grep Make" outfile
+# leaks:
+# 			valgrind --leak-check=full --show-leak-kinds=definite ./$(NAME_C) @ps | grep server | cut -c1-5 "abc"
 
 git:		
 			make fclean
